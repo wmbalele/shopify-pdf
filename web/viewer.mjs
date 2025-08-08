@@ -13582,10 +13582,6 @@ class SecondaryToolbar {
       eventName: "print",
       close: true
     }, {
-      element: options.downloadButton,
-      eventName: "download",
-      close: true
-    }, {
       element: options.viewBookmarkButton,
       eventName: null,
       close: true
