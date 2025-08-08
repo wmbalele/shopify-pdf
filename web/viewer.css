@@ -6765,8 +6765,8 @@ dialog :link{
   }
 }
 
-/*#toolbarViewerRight {
+#toolbarViewerRight {
   display: none;
   content-visibility: hidden;
   opacity: 0;
-}*/
+}
