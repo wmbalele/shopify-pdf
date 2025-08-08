@@ -8495,18 +8495,10 @@ class PDFScriptingManager {
             source: this
           });
           break;
-        case "println":
-          console.log(value);
-          break;
         case "zoom":
           if (!isInPresentationMode) {
             pdfViewer.currentScaleValue = value;
           }
-          break;
-        case "SaveAs":
-          this.#eventBus.dispatch("download", {
-            source: this
-          });
           break;
         case "FirstPage":
           pdfViewer.currentPageNumber = 1;
@@ -14751,6 +14743,12 @@ class Toolbar {
     }, {
       element: options.zoomOut,
       eventName: "zoomout"
+    }, {
+      element: options.print,
+      eventName: "print"
+    }, {
+      element: options.download,
+      eventName: "download"
     }, {
       element: options.editorFreeTextButton,
       eventName: "switchannotationeditormode",
