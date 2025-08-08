@@ -8495,10 +8495,18 @@ class PDFScriptingManager {
             source: this
           });
           break;
+        case "println":
+          console.log(value);
+          break;
         case "zoom":
           if (!isInPresentationMode) {
             pdfViewer.currentScaleValue = value;
           }
+          break;
+        case "SaveAs":
+          this.#eventBus.dispatch("download", {
+            source: this
+          });
           break;
         case "FirstPage":
           pdfViewer.currentPageNumber = 1;
