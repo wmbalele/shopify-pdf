@@ -13578,6 +13578,14 @@ class SecondaryToolbar {
       eventName: "presentationmode",
       close: true
     }, {
+      element: options.printButton,
+      eventName: "print",
+      close: true
+    }, {
+      element: options.downloadButton,
+      eventName: "download",
+      close: true
+    }, {
       element: options.viewBookmarkButton,
       eventName: null,
       close: true
@@ -17223,8 +17231,7 @@ function getViewerConfiguration() {
       editorStampButton: document.getElementById("editorStampButton"),
       editorStampParamsToolbar: document.getElementById("editorStampParamsToolbar"),
       editorSignatureButton: document.getElementById("editorSignatureButton"),
-      editorSignatureParamsToolbar: document.getElementById("editorSignatureParamsToolbar"),
-      download: document.getElementById("downloadButton")
+      editorSignatureParamsToolbar: document.getElementById("editorSignatureParamsToolbar")
     },
     sidebar: {
       outerContainer: document.getElementById("outerContainer"),
