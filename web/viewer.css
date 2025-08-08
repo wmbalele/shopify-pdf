@@ -6765,9 +6765,9 @@ dialog :link{
   }
 }
 
-#printButton, #downloadButton,
+/*#printButton, #downloadButton,
 #secondaryToolbarToggle {
   display: none;
   content-visibility: hidden;
   opacity: 0;
-}
+}*/
